@@ -8,7 +8,7 @@ function addTask() {
     const taskText = inputField.value.trim();
 
     if (taskText === '') {
-        alert('Please enter a task!');
+        alert('Please enter a list item!');
         return;
     }
 
