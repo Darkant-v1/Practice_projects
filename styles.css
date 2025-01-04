@@ -1,19 +1,98 @@
-body{
-    
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-h1 {
-    color: blue;
+/* Container for To-Do List */
+#toDoContainer {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#btn1 {
-
+/* Heading Styling */
+#toDoContainer h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
 }
 
-#btn2 {
-
+/* Input Field Styling */
+input[type="text"] {
+    width: calc(100% - 100px);
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
 }
 
-#btn3 {
+/* Button Styling */
+button {
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
 
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #004080;
+}
+
+/* To-Do List Styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f5f5f5;
+    transition: transform 0.2s;
+}
+
+li:hover {
+    transform: translateY(-2px);
+}
+
+/* Edit and Remove Button Styling */
+li button {
+    margin-left: 10px;
+    background-color: #6c757d;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+li button:hover {
+    background-color: #495057;
+}
+
+li button:first-child {
+    background-color: #ffc107;
+}
+
+li button:first-child:hover {
+    background-color: #e0a800;
 }
